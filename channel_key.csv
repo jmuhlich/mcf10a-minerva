@@ -1,0 +1,37 @@
+ID,Cycle,Channel,Marker
+1,0,1-DAPI,background DAPI
+2,1,1-DAPI,DNA 2
+3,2,1-DAPI,DNA 3
+4,3,1-DAPI,DNA 4
+5,4,1-DAPI,DNA 5
+6,5,1-DAPI,DNA 6
+7,6,1-DAPI,DNA 7
+8,7,1-DAPI,DNA 8
+9,8,1-DAPI,DNA 9
+10,0,3-cy3,background Cy3
+11,1,3-cy3,STAT1 (p-S727)
+12,2,3-cy3,Vimentin
+13,3,3-cy3,Cytokeratin 7
+14,4,3-cy3,ki67
+15,5,3-cy3,S6
+16,6,3-cy3,LC3A/B
+17,7,3-cy3,empty
+18,8,3-cy3,empty
+19,0,4-cy5,background Cy5
+20,1,4-cy5,NFkB (p65)
+21,2,4-cy5,p21 (Waf1/Cip1)
+22,3,4-cy5,Catenin (Beta)
+23,4,4-cy5,S6 (p-S235/S236)
+24,5,4-cy5,PDL1
+25,6,4-cy5,E-cadherin
+26,7,4-cy5,STAT1 (alpha-isoform)
+27,8,4-cy5,HES1
+28,0,2-FITC,background FITC
+29,1,2-FITC,EGFR
+30,2,2-FITC,NDG1 (p-T346)
+31,3,2-FITC,STAT3
+32,4,2-FITC,S6 (p-S240/244)
+33,5,2-FITC,MET
+34,6,2-FITC,Cytokeratin 18
+35,7,2-FITC,Cyclin D1
+36,8,2-FITC,c-Jun
