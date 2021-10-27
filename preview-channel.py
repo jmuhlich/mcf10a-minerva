@@ -1,6 +1,7 @@
 import concurrent.futures
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 import pathlib
 import scipy.stats
 import sklearn.mixture
@@ -34,8 +35,9 @@ if __name__ == '__main__':
     images = [img[yi][:, xi] for img in images]
     images_log = [np.log(img[img > 0]) for img in images]
 
-    print(f"Computing limits for individual images")
-    pool = concurrent.futures.ProcessPoolExecutor()
+    num_cpus = len(os.sched_getaffinity(0))
+    print(f"Computing limits for individual images (using {num_cpus} CPUs)")
+    pool = concurrent.futures.ProcessPoolExecutor(max_workers=num_cpus)
     progress = tqdm.tqdm(
         zip(pool.map(fit_threshold, images_log), image_paths, images, images_log),
         total=ni
